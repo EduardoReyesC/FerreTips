@@ -4,9 +4,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-        return render_template("inicio.html")
+        return render_template("prueba.html")
 
+@app.route("/prueba")
+def prueba():
+        return render_template("prueba.html")
 
+@app.route("/nosotros")
+def nosotros():
+        return render_template("nosotros.html")
 
-if '__main__' == __name__:
+if __name__=='__main__':
     app.run()

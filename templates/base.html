@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock titulo %}</title>
+    <link rel= "stylesheet" href="static/style.css">
+     
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">FERRETERIA</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="static/imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">servicio</a></li>
+                    <li><a href="#">productos</a></li>
+                    <li><a href="#">contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+               
+                <li class="submenu">
+                    <img src="static/imagenes/car.svg" id="img-carrito" alt=" carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>imagen</th>
+                                    <th>nombre</th>
+                                    <th>precio</th>
+                                    <th></th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                    </div>
+                </li>
+               </ul>
+            </div>
+        </div>
+
+
+        <div class="header-content container">
+           <!-- <div class="header-img">
+                <img src="imagenes/martillo.jpeg" alt="">
+            </div>-->
+            <div class="header-txt">
+                <h1>¿Quieres hacerlo<br> <span>tu mismo?</span></h1>
+                <p>aprende como hacer trabajos basicos <br>con nuestros tutoriales</p>
+                <a href="#" class="btn-1">Ver mas</a>
+            </div>
+        </div>
+    </header>
+{% block contenido %}
+ {% endblock %}
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3> loren</h3>
+                <ul>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">facebook</a></li> 
+                    <li><a href="#">youtube</a></li>
+                    <li><a href="#">pinterest</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+ 
+
+</body>
+</html>9
