@@ -7,3 +7,7 @@
 -Se agrego plantillas ejemplo de cada tipo de vista en su respectiva carpeta
 -Se creo un un registro de actividad 
 -Se agrega la plantilla de registro realizada 
+-----------23/04/25--------------
+-se agrego el archivo base.html que contiene el header y footer
+-se agrego el archivo prueba.html que contiene el cuerpo de la pagina de inicio
+-se agregaron las imagenes a la pagina 
