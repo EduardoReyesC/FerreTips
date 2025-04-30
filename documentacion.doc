@@ -11,3 +11,13 @@
 -se agrego el archivo base.html que contiene el header y footer
 -se agrego el archivo prueba.html que contiene el cuerpo de la pagina de inicio
 -se agregaron las imagenes a la pagina 
+-----------25/04/25---------------
+-se corrigio el header
+-se agrego barra de busqueda
+-se creo el banner
+-----------29/04/25----------------
+-se creo el archivo catalogo.html
+-se creo el archivo estilocatalogo.css
+-se agregaron productos al catalogo 
+-se crao el menu de categorias del catalogo
+
