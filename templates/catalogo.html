@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Catálogo
+{% endblock %}
+
+<!--{% block estilos %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='estilocatalogo.css') }}">
+{% endblock %}-->
+
+{% block contenido %}
+<main class="contenedor">
+    <!-- Menú lateral -->
+    <aside class="menuizq">
+      <h2>Compra por Departamento</h2>
+      <ul>
+        <li>Baños</li>
+        <li>Cocina</li>
+        <li>Decoración y hogar</li>
+        <li>Electrónica y Tecnología</li>
+        <li>Eléctrico</li>
+        <li>Ferretería</li>
+        <li>Herramientas</li>
+        <li>Iluminación</li>
+        <li>Jardín</li>
+        <li>Limpieza</li>
+        <li>Línea blanca y Cocinas</li>
+        <li>Materiales de Construcción</li>
+        <li>Muebles</li>
+        <li>Organizadores y Clósets</li>
+        <li>Pinturas</li>
+        <li>Pisos</li>
+        <li>Plomería</li>
+        <li>Puertas y Ventanas</li>
+        <li>Seguridad</li>
+      </ul>
+    </aside>
+
+    <!-- Catálogo de productos -->
+    <!-- Catálogo de productos -->
+    <section class="catalogo">
+        <div class="producto">
+            <img src="static/imagenes/martillo.jpeg" alt="Producto" />
+            <h2>Acriton 04 Años Blanco</h2>
+            <p class="descripcion">Galón 4 Litros Fester 2346401</p>
+            <p class="precio">$958.00</p>
+            <button>Añadir al carrito</button>
+          </div>
+    
+          <div class="producto">
+            <img src="static/imagenes/foco.png" alt="Producto" />
+            <h2>Acriton 08 Años Rojo</h2>
+            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+            <p class="precio">$1,052.00</p>
+            <button>Añadir al carrito</button>
+          </div>
+          <div class="producto">
+            <img src="static/imagenes/paleta.jpeg" alt="Producto" />
+            <h2>Acriton 08 Años Rojo</h2>
+            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+            <p class="precio">$1,052.00</p>
+            <button>Añadir al carrito</button>
+          </div>
+    
+          <div class="producto">
+            <img src="static/imagenes/pulidora.jpeg" alt="Producto" />
+            <h2>Acriton 08 Años Rojo</h2>
+            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+            <p class="precio">$1,052.00</p>
+            <button>Añadir al carrito</button>
+          </div>
+    
+          <div class="producto">
+            <img src="static/imagenes/pintura.png" alt="Producto" />
+            <h2>Acriton 08 Años Rojo</h2>
+            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+            <p class="precio">$1,052.00</p>
+            <button>Añadir al carrito</button>
+          </div>
+  
+          <div class="producto">
+              <img src="static/imagenes/martillo.jpeg" alt="Producto" />
+              <h2>Acriton 04 Años Blanco</h2>
+              <p class="descripcion">Galón 4 Litros Fester 2346401</p>
+              <p class="precio">$958.00</p>
+              <button>Añadir al carrito</button>
+            </div>
+      
+            <div class="producto">
+              <img src="static/imagenes/foco.png" alt="Producto" />
+              <h2>Acriton 08 Años Rojo</h2>
+              <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+              <p class="precio">$1,052.00</p>
+              <button>Añadir al carrito</button>
+            </div>
+            <div class="producto">
+              <img src="static/imagenes/paleta.jpeg" alt="Producto" />
+              <h2>Acriton 08 Años Rojo</h2>
+              <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+              <p class="precio">$1,052.00</p>
+              <button>Añadir al carrito</button>
+            </div>
+      
+            <div class="producto">
+              <img src="static/imagenes/pulidora.jpeg" alt="Producto" />
+              <h2>Acriton 08 Años Rojo</h2>
+              <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+              <p class="precio">$1,052.00</p>
+              <button>Añadir al carrito</button>
+            </div>
+      
+            <div class="producto">
+              <img src="static/imagenes/pintura.png" alt="Producto" />
+              <h2>Acriton 08 Años Rojo</h2>
+              <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+              <p class="precio">$1,052.00</p>
+              <button>Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="static/imagenes/martillo.jpeg" alt="Producto" />
+                <h2>Acriton 04 Años Blanco</h2>
+                <p class="descripcion">Galón 4 Litros Fester 2346401</p>
+                <p class="precio">$958.00</p>
+                <button>Añadir al carrito</button>
+              </div>
+        
+              <div class="producto">
+                <img src="static/imagenes/foco.png" alt="Producto" />
+                <h2>Acriton 08 Años Rojo</h2>
+                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                <p class="precio">$1,052.00</p>
+                <button>Añadir al carrito</button>
+              </div>
+              <div class="producto">
+                <img src="static/imagenes/paleta.jpeg" alt="Producto" />
+                <h2>Acriton 08 Años Rojo</h2>
+                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                <p class="precio">$1,052.00</p>
+                <button>Añadir al carrito</button>
+              </div>
+        
+              <div class="producto">
+                <img src="static/imagenes/pulidora.jpeg" alt="Producto" />
+                <h2>Acriton 08 Años Rojo</h2>
+                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                <p class="precio">$1,052.00</p>
+                <button>Añadir al carrito</button>
+              </div>
+        
+              <div class="producto">
+                <img src="static/imagenes/pintura.png" alt="Producto" />
+                <h2>Acriton 08 Años Rojo</h2>
+                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                <p class="precio">$1,052.00</p>
+                <button>Añadir al carrito</button>
+              </div>
+      
+              <div class="producto">
+                  <img src="static/imagenes/martillo.jpeg" alt="Producto" />
+                  <h2>Acriton 04 Años Blanco</h2>
+                  <p class="descripcion">Galón 4 Litros Fester 2346401</p>
+                  <p class="precio">$958.00</p>
+                  <button>Añadir al carrito</button>
+                </div>
+          
+                <div class="producto">
+                  <img src="static/imagenes/foco.png" alt="Producto" />
+                  <h2>Acriton 08 Años Rojo</h2>
+                  <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                  <p class="precio">$1,052.00</p>
+                  <button>Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                  <img src="static/imagenes/paleta.jpeg" alt="Producto" />
+                  <h2>Acriton 08 Años Rojo</h2>
+                  <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                  <p class="precio">$1,052.00</p>
+                  <button>Añadir al carrito</button>
+                </div>
+          
+                <div class="producto">
+                  <img src="static/imagenes/pulidora.jpeg" alt="Producto" />
+                  <h2>Acriton 08 Años Rojo</h2>
+                  <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                  <p class="precio">$1,052.00</p>
+                  <button>Añadir al carrito</button>
+                </div>
+          
+                <div class="producto">
+                  <img src="static/imagenes/pintura.png" alt="Producto" />
+                  <h2>Acriton 08 Años Rojo</h2>
+                  <p class="descripcion">Galón 4 Litros Fester 2346398</p>
+                  <p class="precio">$1,052.00</p>
+                  <button>Añadir al carrito</button>
+                </div>
+
+    
+          <!-- Más productos... -->
+      </section>
+  </main>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------

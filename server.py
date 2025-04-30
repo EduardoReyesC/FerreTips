@@ -2,6 +2,10 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+@app.route('/catalogo')
+def catalogo():
+    return render_template('catalogo.html')
+
 @app.route("/")
 def index():
         return render_template("prueba.html")
