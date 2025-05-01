@@ -1,10 +1,17 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, session
 
 app = Flask(__name__)
 
-@app.route('/catalogo')
+
+@app.route('/herramientas')
+def herramientas():
+    return render_template('herramientas.html')
+
+@app.route("/catalogo")
 def catalogo():
-    return render_template('catalogo.html')
+    usuario = session.get("usuario")  # Por ejemplo
+    return render_template("catalogo.html", usuario=usuario)
+
 
 @app.route("/")
 def index():
