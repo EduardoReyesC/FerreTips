@@ -28,7 +28,7 @@
         {% if usuario %}
             <span class="user-name">{{ usuario }}</span>
         {% else %}
-            <a href="/login" class="login-link">Iniciar sesión</a>
+            <a href"#" class="login-link">Iniciar sesión</a>
         {% endif %}
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="content-shopping-cart">
@@ -42,10 +42,10 @@
         <nav class="navbar container">
             <i class="fa-solid fa-bars"></i>
             <ul class="menu">
-                <li><a href="/catalogo">catalogo</a></li>
-                <li><a href="#">tutoriales</a></li>
-                <li><a href="#">contacto</a></li>
-                <li><a href="#">envios</a></li>
+                <li><a href="{{ url_for('catalogo') }}">Catalogo</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Facturacion</a></li>
+                <li><a href="#">Envios</a></li>
             </ul>
             <form class="search-form">
                 <input type="search" placeholder="Buscar..."/>

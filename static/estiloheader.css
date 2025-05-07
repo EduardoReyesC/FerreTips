@@ -138,6 +138,11 @@ html{
     color: #fff;
     
 }
+
+.container-user a:hover{
+    color: #fff;
+    
+}
 .search-form{
     position: relative;
     display: flex;
