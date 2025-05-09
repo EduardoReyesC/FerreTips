@@ -5,6 +5,28 @@ pinturas
 {% block contenido %}
 
 <main class="contenedor">
+<aside class="menuizq">
+      <h2>Compra por Departamento</h2>
+      <ul>
+        <li><a href="{{ url_for('herramientas') }}">Herramientas</a></li>
+        <li><a href="{{ url_for('iluminacion') }}">Iluminación</a></li>
+        <li><a href="{{ url_for('pinturas') }}">Pinturas</a></li>
+        <li><a href="{{ url_for('tlapaleria') }}">tlapaleria</a></li>
+        <li><a href="#">Cocina</a></li>
+        <li><a href="#">Decoración y hogar</a></li>
+        <li><a href="#">Electrónica y Tecnología</a></li>
+        <li><a href="#">Eléctrico</a></li>
+        <li><a href="#">Jardín</a></li>
+        <li><a href="#">Ferretería</a></li>
+        <li><a href="#">Línea blanca y Cocinas</a></li>
+        <li><a href="#">Materiales de Construcción</a></li>
+        <li><a href="#">Muebles</a></li>
+        <li><a href="#">Organizadores y Clósets</a></li>
+        <li><a href="#">Plomería</a></li>
+        <li><a href="#">Puertas y Ventanas</a></li>
+      </ul>
+    </aside>
+
 <section class="herramientas">
             <div class="producto">
                 <img src="static/imagenes/pintura.png" alt="Producto" />
@@ -31,7 +53,7 @@ pinturas
               <button>Añadir al carrito</button>
             </div>
             <div class="producto">
-              <img src="static/imagenes/pintura04.png" alt="Producto" />
+              <img src="static/imagenes/pintura04.png" alt="Producto" 
               <h2>Pintura Acqua 100</h2>
               <p class="descripcion">Pintura Aqua 19l</p>
               <p class="precio">$1,052.00</p>

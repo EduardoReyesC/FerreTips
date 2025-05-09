@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, url_for, session
 
 app = Flask(__name__)
 
-
 @app.route('/herramientas')
 def herramientas():
     return render_template('herramientas.html')

@@ -108,3 +108,16 @@
   gap: 3rem;
   padding: 2rem;
 }
+
+.detalle-articulo {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.detalle-articulo img {
+    width: 100%;
+}
