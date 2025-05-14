@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block titulo %}
+pinturas
+{% endblock %}
+{% block contenido %}
+
+
+<main class="contenedor">
+  <aside class="menuizq">
+      <h2>Compra por Departamento</h2>
+      <ul>
+        <li><a href="{{ url_for('herramientas') }}">Herramientas</a></li>
+        <li><a href="{{ url_for('iluminacion') }}">Iluminación</a></li>
+        <li><a href="{{ url_for('pinturas') }}">Pinturas</a></li>
+        <li><a href="{{ url_for('tlapaleria') }}">tlapaleria</a></li>
+        <li><a href="#">Cocina</a></li>
+        <li><a href="#">Decoración y hogar</a></li>
+        <li><a href="#">Electrónica y Tecnología</a></li>
+        <li><a href="#">Eléctrico</a></li>
+        <li><a href="#">Jardín</a></li>
+        <li><a href="#">Ferretería</a></li>
+        <li><a href="#">Línea blanca y Cocinas</a></li>
+        <li><a href="#">Materiales de Construcción</a></li>
+        <li><a href="#">Muebles</a></li>
+        <li><a href="#">Organizadores y Clósets</a></li>
+        <li><a href="#">Plomería</a></li>
+        <li><a href="#">Puertas y Ventanas</a></li>
+      </ul>
+    </aside>
+<section class="herramientas">
+        <div class="producto">
+            <img src="static/imagenes/tornillo01.jpg" alt="Producto" />
+            <h2>Tornillo Acero inoxidable</h2>
+            <p class="descripcion">3.5 mm x 25 mm</p>
+            <p class="precio">$34.00 MXN x 100gr</p>
+            <button>Añadir al carrito</button>
+          </div>
+          <div class="producto">
+            <img src="static/imagenes/tornillo02.jpg" alt="Producto" />
+            <h2>Tornillos Acero al carbono</h2>
+            <p class="descripcion">5 mm x 20 mm</p>
+            <p class="precio">$52.00 x100gr</p>
+            <button>Añadir al carrito</button>
+          </div>
+          <div class="producto">
+            <img src="static/imagenes/tornillo03.jpg" alt="Producto" />
+            <h2>Tornillo Acero inoxidable</h2>
+            <p class="descripcion">4 mm x 30 mm</p>
+            <p class="precio">$</p>
+            <button>Añadir al carrito</button>
+          </div>
+  
+          <div class="producto">
+              <img src="static/imagenes/tornillo04.jpg" alt="Producto" />
+              <h2>Tornillo Acero inoxidable</h2>
+              <p class="descripcion">4 mm x 30 mm</p>
+              <p class="precio">$98.00 kl</p>
+              <button>Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="static/imagenes/tornillo05.jpg" alt="Producto" />
+                <h2>Tornillos Hexagonales"</h2>
+                <p class="descripcion">1/4" x 1</p>
+                <p class="precio">$52.00 x 100gr</p>
+                <button>Añadir al carrito</button>
+              </div>
+
+          <div class="producto">
+                <img src="static/imagenes/tornillo06.jpg" alt="Producto" />
+                <h2>Tornillo Acero inoxidable</h2>
+                <p class="descripcion">4 mm x 30 mm</p>
+                <p class="precio">$82.00 kl</p>
+                <button>Añadir al carrito</button>
+         </div>
+
+
+  </section>
+</main>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------
+
+
+
+
+
+
+
+
+
+
+
+----------------------------

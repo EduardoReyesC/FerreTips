@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FERRETIPS</title>
-    <link rel="stylesheet" href="static/estiloheader.css">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/estilocatalogo.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilocatalogo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estiloheader.css') }}">
 
 </head>
 <body>
@@ -25,7 +25,11 @@
             <h1 class="logo"><a href="/">FERRETIPS</a></h1>
         </div>
         <div class="container-user">
-            <i class="fa-solid fa-user"></i>
+        {% if usuario %}
+            <span class="user-name">{{ usuario }}</span>
+        {% else %}
+            <a href"#" class="login-link">Iniciar sesión</a>
+        {% endif %}
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="content-shopping-cart">
                  <span class="text"> carrito</span>
@@ -38,10 +42,10 @@
         <nav class="navbar container">
             <i class="fa-solid fa-bars"></i>
             <ul class="menu">
-                <li><a href="/catalogo">catalogo</a></li>
-                <li><a href="#">tutoriales</a></li>
-                <li><a href="#">contacto</a></li>
-                <li><a href="#">envios</a></li>
+                <li><a href="{{ url_for('catalogo') }}">Catalogo</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Facturacion</a></li>
+                <li><a href="#">Envios</a></li>
             </ul>
             <form class="search-form">
                 <input type="search" placeholder="Buscar..."/>
@@ -54,6 +58,7 @@
 </header>
 
 {% block contenido %}
+
  {% endblock %}
     <footer class="footer">
         <div class="footer-content container">

@@ -62,12 +62,20 @@ html{
     cursor: pointer;
 }
 
-.container-user .fa-user{
-    font-size: 3rem;
+.login-link, .user-name {
+    font-size: 1.8rem;
     color: #003f5a;
     padding-right: 2.5rem;
     border-right: 1px solid #e2e2e2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+
+.user-name {
+    font-weight: bold;
+}
+
 
 .container-user .fa-cart-shopping{
     font-size: 3rem;
@@ -127,6 +135,11 @@ html{
     opacity: 1;
 }
 .menu a:hover{
+    color: #fff;
+    
+}
+
+.container-user a:hover{
     color: #fff;
     
 }
