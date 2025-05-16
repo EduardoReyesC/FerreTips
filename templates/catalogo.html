@@ -34,30 +34,96 @@ Catálogo
     </aside>
 
 
-<section class="herramientas">
-        <div class="producto">
-            <img src="static/imagenes/martillo.jpeg" alt="Producto" />
-            <h2>Acriton 04 Años Blanco</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346401</p>
-            <p class="precio">$958.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-    
-          <div class="producto">
-            <img src="static/imagenes/foco.png" alt="Producto" />
-            <h2>Acriton 08 Años Rojo</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-            <p class="precio">$1,052.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-          <div class="producto">
-            <img src="static/imagenes/paleta.jpeg" alt="Producto" />
-            <h2>Acriton 08 Años Rojo</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-            <p class="precio">$1,052.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-      </section>
+ 
+   <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Foco 100w</span>
+                <img src="static/imagenes/foco.png" alt="" class="img-item">
+                <span class="precio-item">$70</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+              <div class="item">
+                <span class="titulo-item">enchufe</span>
+                <img src="static/imagenes/enchufe.jpeg" alt="" class="img-item">
+                <span class="precio-item">$10</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+              <div class="item">
+                <span class="titulo-item">Pintura 20L</span>
+                <img src="static/imagenes/pintura.png"alt="" class="img-item">
+                <span class="precio-item">$180</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+              <div class="item">
+                <span class="titulo-item">Pintura verde</span>
+                <img src="static/imagenes/pintura.png" alt="" class="img-item">
+                <span class="precio-item">$170</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+             <div class="item">
+                <span class="titulo-item">pintura roja</span>
+                <img src="static/imagenes/pintura.png" alt="" class="img-item">
+                <span class="precio-item">$130</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+                <div class="item">
+                <span class="titulo-item">Pulidora </span>
+                <img src="static/imagenes/pulidora.jpeg" alt="" class="img-item">
+                <span class="precio-item">$250</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+            
+            <div class="carrito-items">
+                <!--  
+                <div class="carrito-item">
+                    <img src="imagenes/foco.png" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Foco</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                      <span class="carrito-item-precio">$70</span>
+                    </div> 
+                    <span class="btn-eliminar">
+                     <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+
+                <div class="carrito-item">
+                    <img src="imagenes/enchufe.jpeg" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">enchufe</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                      <span class="carrito-item-precio">$10</span>
+                    </div> 
+                    <span class="btn-eliminar">
+                     <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>-->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu total </strong>
+                    <span class="carrito-precio-total">$</span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+
   </main>
 {% endblock %}
 

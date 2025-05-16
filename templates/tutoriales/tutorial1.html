@@ -1,7 +1,67 @@
 {% extends "index.html" %}
 
 {% block title %} tutorial 1 {% endblock %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Herramientas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video-item {
+            width: 300px;
+        }
+        iframe {
+            width: 100%;
+            height: 170px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Demostración de Herramientas</h1>
+
+    <div class="video-container" id="videos"></div>
+
+    <script>
+        const herramientas = [
+            { nombre: "Taladro DeWalt", enlace: "https://www.youtube.com/embed/1eYw1p12n6k" },
+            { nombre: "Taladro Porter", enlace: "https://www.youtube.com/embed/8DYOJ9dEm6o" },
+            { nombre: "Martillo Bellota", enlace: "https://www.youtube.com/embed/8ELBNKUMocI" },
+            { nombre: "Martillo Truper", enlace: "https://www.youtube.com/embed/9XEjU6r0-pk" },
+            { nombre: "Desatornillador eléctrico", enlace: "https://www.youtube.com/embed/oe1qvQvYpYc" },
+            { nombre: "Desatornillador Decker", enlace: "https://www.youtube.com/embed/EVuBfsz9zWY" },
+            { nombre: "Pinzas Metz", enlace: "https://www.youtube.com/embed/fZLHu-rDYFU" },
+            { nombre: "Pinzas Urrea", enlace: "https://www.youtube.com/embed/TtEWo6k_9Zs" },
+            { nombre: "Juego de Desatornilladores", enlace: "https://www.youtube.com/embed/yUK4PNo-U5s" }
+        ];
+
+        const contenedor = document.getElementById('videos');
+
+        herramientas.forEach(h => {
+            const div = document.createElement('div');
+            div.className = 'video-item';
+            div.innerHTML = `
+                <h2>${h.nombre}</h2>
+                <iframe src="${h.enlace}" frameborder="0" allowfullscreen></iframe>
+            `;
+            contenedor.appendChild(div);
+        });
+    </script>
+
+</body>
+</html>
 {% block content %}
 
  

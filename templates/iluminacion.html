@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block titulo %}
-iluminacion
+pinturas
 {% endblock %}
 {% block contenido %}
 
@@ -28,78 +28,104 @@ iluminacion
       </ul>
     </aside>
 
-<section class="herramientas">
-        <div class="producto">
-            <img src="static/imagenes/foco.png" alt="Producto" />
-            <h2>Taladro deWalt</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346401</p>
-            <p class="precio">$58.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-          <div class="producto">
-            <img src="static/imagenes/foco_03.jpg" alt="Producto" />
-            <h2>Taladro</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-            <p class="precio">$52.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-          <div class="producto">
-            <img src="static/imagenes/foco_04.jpg" alt="Producto" />
-            <h2>Taladro Porter</h2>
-            <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-            <p class="precio">$1,052.00</p>
-            <button>Añadir al carrito</button>
-          </div>
-  
-          <div class="producto">
-              <img src="static/imagenes/foco_05.jpeg" alt="Producto" />
-              <h2>Martillo Bellota</h2>
-              <p class="descripcion">Galón 4 Litros Fester 2346401</p>
-              <p class="precio">$48.00</p>
-              <button>Añadir al carrito</button>
+   <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item"> Foco para patio </span>
+                <img src="static/imagenes/lampara_cafe.jpg" alt="" class="img-item">
+                <span class="precio-item">$170</span>
+                <button class="boton-item">agregar al carrito</button>
             </div>
+              <div class="item">
+                <span class="titulo-item">Foco luz amarilla</span>
+                <img src="static/imagenes/foco_03.jpg" alt="" class="img-item">
+                <span class="precio-item">$50</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+              <div class="item">
+                <span class="titulo-item">Lampara de techo</span>
+                <img src="static/imagenes/lampara_techo.jpeg"alt="" class="img-item">
+                <span class="precio-item">$180</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+              <div class="item">
+                <span class="titulo-item">Foco luz blanca  100w</span>
+                <img src="static/imagenes/foco_04.jpg" alt="" class="img-item">
+                <span class="precio-item">$70</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+                <div class="item">
+                <span class="titulo-item">Foco luz blanca 50w</span>
+                <img src="static/imagenes/foco.png" alt="" class="img-item">
+                <span class="precio-item">$40</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+             <div class="item">
+                <span class="titulo-item">Foco luz amarilla</span>
+                <img src="static/imagenes/foco_05.jpeg" alt="" class="img-item">
+                <span class="precio-item">$89</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+                <div class="item">
+                <span class="titulo-item">foco luz amarilla</span>
+                <img src="static/imagenes/foco_03.jpg" alt="" class="img-item">
+                <span class="precio-item">$50</span>
+                <button class="boton-item">agregar al carrito</button>
+            </div>
+        </div>
 
-            <div class="producto">
-                <img src="static/imagenes/lampara_01.jpg" alt="Producto" />
-                <h2>Martillo Truper </h2>
-                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-                <p class="precio">$52.00</p>
-                <button>Añadir al carrito</button>
-              </div>
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+            
+            <div class="carrito-items">
+                <!--  
+                <div class="carrito-item">
+                    <img src="imagenes/foco.png" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Foco</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                      <span class="carrito-item-precio">$70</span>
+                    </div> 
+                    <span class="btn-eliminar">
+                     <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
 
-          <div class="producto">
-                <img src="static/imagenes/lampara_cafe.jpg" alt="Producto" />
-                <h2>Destornillador electrico</h2>
-                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-                <p class="precio">$112.00</p>
-                <button>Añadir al carrito</button>
-         </div>
-          <div class="producto">
-                <img src="static/imagenes/lampara_techo.jpeg" alt="Producto" />
-                <h2>Destornillador electrico</h2>
-                <p class="descripcion">Galón 4 Litros Fester 2346398</p>
-                <p class="precio">$1,052.00</p>
-                <button>Añadir al carrito</button>
-         </div>         
-
-
-  </section>
+                <div class="carrito-item">
+                    <img src="imagenes/enchufe.jpeg" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">enchufe</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                      <span class="carrito-item-precio">$10</span>
+                    </div> 
+                    <span class="btn-eliminar">
+                     <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>-->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu total </strong>
+                    <span class="carrito-precio-total">$</span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>
 </main>
 {% endblock %}
 
 
-
-
-
-
-
-
-
-
-
-
-
-----------------------------
 
 
 

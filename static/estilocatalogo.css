@@ -48,7 +48,7 @@
     padding: 2rem;
   }
   
-  .producto {
+  .producto{
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
@@ -101,7 +101,7 @@
     background-color: #b00000;
   }
   
-.herramientas {
+.productos-form {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -109,15 +109,3 @@
   padding: 2rem;
 }
 
-.detalle-articulo {
-    width: 400px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.detalle-articulo img {
-    width: 100%;
-}
