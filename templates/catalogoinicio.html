@@ -1,0 +1,16 @@
+{% extends "catalogo.html" %}
+{% block titulo %}
+Catalogo
+{% endblock %}
+{% block contenido_catalogo %}
+
+{% for campo in campos %}
+<div class="item">
+  <span class="titulo-item">{{ campo.nombre }}</span>
+  <img src="{{ campo.imagen }}" alt="" class="img-item">
+  <span class="precio-item">${{ campo.precio }}</span>
+  <button class="boton-item">agregar al carrito</button>
+</div>
+{% endfor %}
+
+{% endblock %}

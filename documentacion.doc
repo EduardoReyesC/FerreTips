@@ -7,17 +7,26 @@
 -Se agrego plantillas ejemplo de cada tipo de vista en su respectiva carpeta
 -Se creo un un registro de actividad 
 -Se agrega la plantilla de registro realizada 
+
 -----------23/04/25--------------
 -se agrego el archivo base.html que contiene el header y footer
 -se agrego el archivo prueba.html que contiene el cuerpo de la pagina de inicio
 -se agregaron las imagenes a la pagina 
+
 -----------25/04/25---------------
 -se corrigio el header
 -se agrego barra de busqueda
 -se creo el banner
+
 -----------29/04/25----------------
 -se creo el archivo catalogo.html
 -se creo el archivo estilocatalogo.css
 -se agregaron productos al catalogo 
 -se crao el menu de categorias del catalogo
 
+-----------18/05/25----------------
+-se creo el archivo buscar.html
+-se vinculo todos los productos a la base de datos
+-se realizaron cambios en otras plantillas para hacerlas compatibles con la base de datos 
+-se habilito la funcion de la barra de busqueda
+-se eliminaron plantillas no funcionales

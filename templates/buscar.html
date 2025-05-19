@@ -1,0 +1,21 @@
+{% extends "catalogo.html" %}
+{% block titulo %}
+busqueda
+{% endblock %}
+{% block contenido_catalogo %}
+
+{% if campos %}
+  {% for campo in campos %}
+    <div class="item">
+      <span class="titulo-item">{{ campo.nombre }}</span>
+      <img src="{{ campo.imagen }}" alt="" class="img-item">
+      <span class="precio-item">${{ campo.precio }}</span>
+      <button class="boton-item">Agregar al carrito</button>
+    </div>
+  {% endfor %}
+
+{% else %}
+  <h1>No se encontraron resultados para tu búsqueda.</h1>
+{% endif %}
+
+{% endblock %}

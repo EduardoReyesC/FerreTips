@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block titulo %}
 Catálogo
 {% endblock %}
@@ -33,46 +32,13 @@ Catálogo
       </ul>
     </aside>
 
-
- 
    <section class="contenedor">
         <div class="contenedor-items">
-            <div class="item">
-                <span class="titulo-item">Foco 100w</span>
-                <img src="static/imagenes/foco.png" alt="" class="img-item">
-                <span class="precio-item">$70</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
-              <div class="item">
-                <span class="titulo-item">enchufe</span>
-                <img src="static/imagenes/enchufe.jpeg" alt="" class="img-item">
-                <span class="precio-item">$10</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
-              <div class="item">
-                <span class="titulo-item">Pintura 20L</span>
-                <img src="static/imagenes/pintura.png"alt="" class="img-item">
-                <span class="precio-item">$180</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
-              <div class="item">
-                <span class="titulo-item">Pintura verde</span>
-                <img src="static/imagenes/pintura.png" alt="" class="img-item">
-                <span class="precio-item">$170</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
-             <div class="item">
-                <span class="titulo-item">pintura roja</span>
-                <img src="static/imagenes/pintura.png" alt="" class="img-item">
-                <span class="precio-item">$130</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
-                <div class="item">
-                <span class="titulo-item">Pulidora </span>
-                <img src="static/imagenes/pulidora.jpeg" alt="" class="img-item">
-                <span class="precio-item">$250</span>
-                <button class="boton-item">agregar al carrito</button>
-            </div>
+
+          {% block contenido_catalogo %}
+            
+          {% endblock %}
+          
         </div>
 
         <div class="carrito">
@@ -126,17 +92,6 @@ Catálogo
 
   </main>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
 
 
 ----------------------------
