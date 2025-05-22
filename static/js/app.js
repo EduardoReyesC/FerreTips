@@ -37,7 +37,6 @@ function restaurarCarritoDesdeLocalStorage() {
     if (!items) return; // Si no hay nada guardado, salimos
 
     for (var i = 0; i < items.length; i++) {
-        // Llama a la misma función que se usa al agregar manualmente
         agregarItemAlCarrito(items[i].titulo, items[i].precio, items[i].imagenSrc, items[i].cantidad);
     }
 }
