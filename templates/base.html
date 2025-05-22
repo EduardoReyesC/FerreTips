@@ -34,11 +34,7 @@
         {% else %}
             <a href="/registro" class="login-link">Iniciar sesión</a>
         {% endif %}
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div class="content-shopping-cart">
-                 <span class="text"> carrito</span>
-                 <span class="number" >(0)</span>
-            </div>
+           
          </div>
         </div>
      </div>
@@ -47,7 +43,7 @@
             <i class="fa-solid fa-bars"></i>
             <ul class="menu">
                 <li><a href="{{ url_for('catalogo') }}">Catalogo</a></li>
-                <li><a href="#">Tutoriales</a></li>
+                <li><a href="{{ url_for('tutorial1') }}">Tutoriales</a></li>
                 <li><a href="#">Facturacion</a></li>
                 <li><a href="#">Envios</a></li>
             </ul>
@@ -81,6 +77,17 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleMenu = document.querySelector('.fa-bars');
+        const menu = document.querySelector('.menu');
+
+        toggleMenu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
 
 
  

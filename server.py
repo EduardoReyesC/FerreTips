@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, session, redirect, flash
 from flask_mysqldb import MySQL
+
 from config import Config
 
 app = Flask(__name__)
@@ -87,7 +88,6 @@ def pinturas():
 @app.route("/catalogo")
 def catalogo():
     
-
     consulta = mysql.connection.cursor() 
     consulta.execute("SELECT nombre, imagen, precio FROM productos order by nombre")
     productos = consulta.fetchall()
@@ -133,6 +133,12 @@ def busqueda():
 
     usuario = session.get("usuario")  
     return render_template("buscar.html", usuario=usuario, campos = pos)
+#@app.route("/tutorial1", methods=['POST'])
+@app.route('/tutorial1')
+def tutorial1():
+    return render_template("tutorial1.html")
+
+
 
 if __name__=='__main__':
-    app.run(debug=True, port=80, host='0.0.0.0')
+    app.run(debug=True, port=5050, host='0.0.0.0')

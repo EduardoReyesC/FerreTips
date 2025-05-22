@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block titulo %}
+tutorial1
+{% endblock %}
+
+{% block contenido %}
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .producto {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    .producto img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .nombre {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+
+<body>
+
+  <h1>Guía de Uso de Herramientas</h1>
+  <div class="productos">
+    
+    <div class="producto">
+      <a href="https://youtu.be/Q5lS9H-7UYs?si=ApRxn4jESrP4Cmez" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Screwdriver-3.jpg/320px-Screwdriver-3.jpg" alt="Juego de desatornilladores">
+      </a>
+      <div class="nombre">Juego de desatornilladores</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=pxQ5MUW3Pcc" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61EqH20xkXL.AC_SL1500.jpg" alt="Desatornillador DeWalt">
+      </a>
+      <div class="nombre">Desatornillador Decker</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=C5Xzt3WX2Gc" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61CUw-3KcsL.AC_SL1500.jpg" alt="Martillo Bellota">
+      </a>
+      <div class="nombre">Martillo Bellota</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=elPHzR2C0DQ" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61ZFtUAXIzL.AC_SL1500.jpg" alt="Martillo Truper">
+      </a>
+      <div class="nombre">Martillo Truper</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=ZtdrJ3e78ws" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61Dd5Q2dJ1L.AC_SL1500.jpg" alt="Pinzas Metz">
+      </a>
+      <div class="nombre">Pinzas Metz</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=t3ZKhOUan2Y" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61I-FmZtFhL.AC_SL1500.jpg" alt="Pinzas Urrea">
+      </a>
+      <div class="nombre">Pinzas Urrea</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=pZ_fOaEYYMI" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/71e8TwlWjQL.AC_SL1500.jpg" alt="Taladro DeWalt">
+      </a>
+      <div class="nombre">Taladro DeWalt</div>
+    </div>
+
+    <div class="producto">
+      <a href="https://www.youtube.com/watch?v=EJhymWv1Kgg" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/81pG6r2RpPL.AC_SL1500.jpg" alt="Taladro Porter">
+      </a>
+      <div class="nombre">Taladro Porter</div>
+    </div>
+
+  </div>
+
+</body>
+
+{% endblock %}
+
+
+----------------------------
